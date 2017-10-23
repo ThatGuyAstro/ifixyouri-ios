@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660787301F9E997C00BC68F8 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6607872F1F9E997C00BC68F8 /* helpers.swift */; };
 		665917871F9CEEF700FB4013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665917861F9CEEF700FB4013 /* AppDelegate.swift */; };
 		665917891F9CEEF700FB4013 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665917881F9CEEF700FB4013 /* FirstViewController.swift */; };
 		6659178B1F9CEEF700FB4013 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659178A1F9CEEF700FB4013 /* SecondViewController.swift */; };
@@ -47,6 +48,7 @@
 		1C05A04794D9861202A4C494 /* Pods_iFixYouri_Check_InTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFixYouri_Check_InTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3914253150AF0B5E585D447A /* Pods_iFixYouri_Check_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFixYouri_Check_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9A3F24AE7E6077C43E107C /* Pods-iFixYouri Check InTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check InTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check InTests/Pods-iFixYouri Check InTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6607872F1F9E997C00BC68F8 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = helpers.swift; path = "iFixYouri Check In/helpers.swift"; sourceTree = "<group>"; };
 		665917831F9CEEF700FB4013 /* iFixYouri Check In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iFixYouri Check In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665917861F9CEEF700FB4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665917881F9CEEF700FB4013 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				66AB00FB1F9D22C30063175E /* constants.swift */,
+				6607872F1F9E997C00BC68F8 /* helpers.swift */,
 			);
 			name = Architecture;
 			sourceTree = "<group>";
@@ -344,7 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3A2C6100565F43CA0FABFC5A /* [CP] Copy Pods Resources */ = {
@@ -389,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8B002507AA592498E6E2C434 /* [CP] Check Pods Manifest.lock */ = {
@@ -404,7 +407,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8E7859831A819409EC053264 /* [CP] Copy Pods Resources */ = {
@@ -479,6 +482,7 @@
 				665917871F9CEEF700FB4013 /* AppDelegate.swift in Sources */,
 				665917891F9CEEF700FB4013 /* FirstViewController.swift in Sources */,
 				66AB00FC1F9D22C30063175E /* constants.swift in Sources */,
+				660787301F9E997C00BC68F8 /* helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M788HE688R;
 				INFOPLIST_FILE = "iFixYouri Check In/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "scio.iFixYouri-Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -650,7 +654,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M788HE688R;
 				INFOPLIST_FILE = "iFixYouri Check In/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "scio.iFixYouri-Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";

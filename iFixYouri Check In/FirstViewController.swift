@@ -15,13 +15,11 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        
-       // var data = api.placeCheckIn
-        
-        
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
+        initUi()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +27,14 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
     
     @IBAction func btnCreateCheckIn(_ sender: Any) {
         
@@ -46,10 +52,19 @@ class FirstViewController: UIViewController {
     
     
     
+    func initUi() {
+        
+        self.navigationController?.navigationBar.backgroundColor = ui.mainClor
+        self.navigationController?.navigationBar.barTintColor = ui.mainClor
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+    }
+    
     func createOrder() {
         
         //Setup object here
-        let checkIn = CheckIn(customer_name: inputCustomerName.text!, customer_phone: inputCustomerPhoneNumber.text!, device_type: inputCustomerDevice.text!, device_id: "123", device_issue: inputDeviceIssue.text!)
+        let checkIn = CheckIn(customer_name: inputCustomerName.text!, customer_phone: inputCustomerPhoneNumber.text!, device_type: UIDevice.current.model, device_id: "123", device_issue: inputDeviceIssue.text!)
 
         //Call postOrder and pass object
         postOrder(_checkIn: checkIn)

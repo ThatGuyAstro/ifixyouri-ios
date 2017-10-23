@@ -7,6 +7,9 @@ target 'iFixYouri Check In' do
   
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.5'
+  pod 'EZSwiftExtensions' #Stable release for Swift 3.0
+  pod 'PMSuperButton'
+
 
 
   # Pods for iFixYouri Check In
