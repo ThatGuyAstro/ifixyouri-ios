@@ -1,0 +1,6 @@
+framework module Pods_iFixYouri_Check_InTests {
+  umbrella header "Pods-iFixYouri Check InTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

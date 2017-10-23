@@ -15,6 +15,11 @@
 		665917931F9CEEF800FB4013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665917911F9CEEF800FB4013 /* LaunchScreen.storyboard */; };
 		6659179E1F9CEEF800FB4013 /* iFixYouri_Check_InTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659179D1F9CEEF800FB4013 /* iFixYouri_Check_InTests.swift */; };
 		665917A91F9CEEF800FB4013 /* iFixYouri_Check_InUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665917A81F9CEEF800FB4013 /* iFixYouri_Check_InUITests.swift */; };
+		66AB00FC1F9D22C30063175E /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB00FB1F9D22C30063175E /* constants.swift */; };
+		66AB00FF1F9D26B30063175E /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB00FE1F9D26B30063175E /* CheckIn.swift */; };
+		9F28187DB7B898CC997DF641 /* Pods_iFixYouri_Check_In.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3914253150AF0B5E585D447A /* Pods_iFixYouri_Check_In.framework */; };
+		D5D22A22ACB1AC54C0B13BE0 /* Pods_iFixYouri_Check_InUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00949DDD98589048B6A00E1B /* Pods_iFixYouri_Check_InUITests.framework */; };
+		DB06732E07B378631351F58E /* Pods_iFixYouri_Check_InTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C05A04794D9861202A4C494 /* Pods_iFixYouri_Check_InTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00949DDD98589048B6A00E1B /* Pods_iFixYouri_Check_InUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFixYouri_Check_InUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01006E69E229AE62ED876E4D /* Pods-iFixYouri Check In.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check In.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check In/Pods-iFixYouri Check In.debug.xcconfig"; sourceTree = "<group>"; };
+		07074E46AD85BE6995457F8C /* Pods-iFixYouri Check InTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check InTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check InTests/Pods-iFixYouri Check InTests.release.xcconfig"; sourceTree = "<group>"; };
+		13A9C9A68C7CBB7F844BF6EF /* Pods-iFixYouri Check In.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check In.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check In/Pods-iFixYouri Check In.release.xcconfig"; sourceTree = "<group>"; };
+		1C05A04794D9861202A4C494 /* Pods_iFixYouri_Check_InTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFixYouri_Check_InTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3914253150AF0B5E585D447A /* Pods_iFixYouri_Check_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFixYouri_Check_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9A3F24AE7E6077C43E107C /* Pods-iFixYouri Check InTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check InTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check InTests/Pods-iFixYouri Check InTests.debug.xcconfig"; sourceTree = "<group>"; };
 		665917831F9CEEF700FB4013 /* iFixYouri Check In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iFixYouri Check In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665917861F9CEEF700FB4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665917881F9CEEF700FB4013 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,10 @@
 		665917A41F9CEEF800FB4013 /* iFixYouri Check InUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iFixYouri Check InUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665917A81F9CEEF800FB4013 /* iFixYouri_Check_InUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFixYouri_Check_InUITests.swift; sourceTree = "<group>"; };
 		665917AA1F9CEEF800FB4013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66AB00FB1F9D22C30063175E /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = constants.swift; path = "iFixYouri Check In/constants.swift"; sourceTree = "<group>"; };
+		66AB00FE1F9D26B30063175E /* CheckIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckIn.swift; path = "iFixYouri Check In/CheckIn.swift"; sourceTree = "<group>"; };
+		D9152F01355B6452D2864680 /* Pods-iFixYouri Check InUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check InUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check InUITests/Pods-iFixYouri Check InUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EEEB904BA08B0C75412444DE /* Pods-iFixYouri Check InUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check InUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check InUITests/Pods-iFixYouri Check InUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F28187DB7B898CC997DF641 /* Pods_iFixYouri_Check_In.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB06732E07B378631351F58E /* Pods_iFixYouri_Check_InTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +88,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D22A22ACB1AC54C0B13BE0 /* Pods_iFixYouri_Check_InUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B9CD2C81E5529F3CC4C4F7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01006E69E229AE62ED876E4D /* Pods-iFixYouri Check In.debug.xcconfig */,
+				13A9C9A68C7CBB7F844BF6EF /* Pods-iFixYouri Check In.release.xcconfig */,
+				3B9A3F24AE7E6077C43E107C /* Pods-iFixYouri Check InTests.debug.xcconfig */,
+				07074E46AD85BE6995457F8C /* Pods-iFixYouri Check InTests.release.xcconfig */,
+				EEEB904BA08B0C75412444DE /* Pods-iFixYouri Check InUITests.debug.xcconfig */,
+				D9152F01355B6452D2864680 /* Pods-iFixYouri Check InUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		484202A6A1AC83736009299C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3914253150AF0B5E585D447A /* Pods_iFixYouri_Check_In.framework */,
+				1C05A04794D9861202A4C494 /* Pods_iFixYouri_Check_InTests.framework */,
+				00949DDD98589048B6A00E1B /* Pods_iFixYouri_Check_InUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6659177A1F9CEEF700FB4013 = {
 			isa = PBXGroup;
 			children = (
+				66AB01001F9D26BA0063175E /* Model */,
+				66AB00FD1F9D26170063175E /* Architecture */,
 				665917851F9CEEF700FB4013 /* iFixYouri Check In */,
 				6659179C1F9CEEF800FB4013 /* iFixYouri Check InTests */,
 				665917A71F9CEEF800FB4013 /* iFixYouri Check InUITests */,
 				665917841F9CEEF700FB4013 /* Products */,
+				2B9CD2C81E5529F3CC4C4F7E /* Pods */,
+				484202A6A1AC83736009299C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +174,22 @@
 			path = "iFixYouri Check InUITests";
 			sourceTree = "<group>";
 		};
+		66AB00FD1F9D26170063175E /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				66AB00FB1F9D22C30063175E /* constants.swift */,
+			);
+			name = Architecture;
+			sourceTree = "<group>";
+		};
+		66AB01001F9D26BA0063175E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66AB00FE1F9D26B30063175E /* CheckIn.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665917AD1F9CEEF800FB4013 /* Build configuration list for PBXNativeTarget "iFixYouri Check In" */;
 			buildPhases = (
+				8967DFB74D68AD10D6DC43FD /* [CP] Check Pods Manifest.lock */,
 				6659177F1F9CEEF700FB4013 /* Sources */,
 				665917801F9CEEF700FB4013 /* Frameworks */,
 				665917811F9CEEF700FB4013 /* Resources */,
+				B25BD5D27DDE48CA1967464C /* [CP] Embed Pods Frameworks */,
+				CBD3ABA8DA7B531CE699161C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665917B01F9CEEF800FB4013 /* Build configuration list for PBXNativeTarget "iFixYouri Check InTests" */;
 			buildPhases = (
+				180B697E20896C524196CEFD /* [CP] Check Pods Manifest.lock */,
 				665917951F9CEEF800FB4013 /* Sources */,
 				665917961F9CEEF800FB4013 /* Frameworks */,
 				665917971F9CEEF800FB4013 /* Resources */,
+				497696E71730B8B89A26E943 /* [CP] Embed Pods Frameworks */,
+				8E7859831A819409EC053264 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665917B31F9CEEF800FB4013 /* Build configuration list for PBXNativeTarget "iFixYouri Check InUITests" */;
 			buildPhases = (
+				8B002507AA592498E6E2C434 /* [CP] Check Pods Manifest.lock */,
 				665917A01F9CEEF800FB4013 /* Sources */,
 				665917A11F9CEEF800FB4013 /* Frameworks */,
 				665917A21F9CEEF800FB4013 /* Resources */,
+				FC8BF635BDC3900518351442 /* [CP] Embed Pods Frameworks */,
+				3A2C6100565F43CA0FABFC5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +331,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		180B697E20896C524196CEFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A2C6100565F43CA0FABFC5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFixYouri Check InUITests/Pods-iFixYouri Check InUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		497696E71730B8B89A26E943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFixYouri Check InTests/Pods-iFixYouri Check InTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8967DFB74D68AD10D6DC43FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B002507AA592498E6E2C434 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E7859831A819409EC053264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFixYouri Check InTests/Pods-iFixYouri Check InTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25BD5D27DDE48CA1967464C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFixYouri Check In/Pods-iFixYouri Check In-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD3ABA8DA7B531CE699161C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFixYouri Check In/Pods-iFixYouri Check In-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8BF635BDC3900518351442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFixYouri Check InUITests/Pods-iFixYouri Check InUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6659177F1F9CEEF700FB4013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6659178B1F9CEEF700FB4013 /* SecondViewController.swift in Sources */,
+				66AB00FF1F9D26B30063175E /* CheckIn.swift in Sources */,
 				665917871F9CEEF700FB4013 /* AppDelegate.swift in Sources */,
 				665917891F9CEEF700FB4013 /* FirstViewController.swift in Sources */,
+				66AB00FC1F9D22C30063175E /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,10 +630,12 @@
 		};
 		665917AE1F9CEEF800FB4013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01006E69E229AE62ED876E4D /* Pods-iFixYouri Check In.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M788HE688R;
 				INFOPLIST_FILE = "iFixYouri Check In/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "scio.iFixYouri-Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,10 +645,12 @@
 		};
 		665917AF1F9CEEF800FB4013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A9C9A68C7CBB7F844BF6EF /* Pods-iFixYouri Check In.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M788HE688R;
 				INFOPLIST_FILE = "iFixYouri Check In/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "scio.iFixYouri-Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +660,7 @@
 		};
 		665917B11F9CEEF800FB4013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9A3F24AE7E6077C43E107C /* Pods-iFixYouri Check InTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +676,7 @@
 		};
 		665917B21F9CEEF800FB4013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07074E46AD85BE6995457F8C /* Pods-iFixYouri Check InTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +692,7 @@
 		};
 		665917B41F9CEEF800FB4013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEB904BA08B0C75412444DE /* Pods-iFixYouri Check InUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M788HE688R;
@@ -489,6 +707,7 @@
 		};
 		665917B51F9CEEF800FB4013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9152F01355B6452D2864680 /* Pods-iFixYouri Check InUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M788HE688R;
@@ -520,6 +739,7 @@
 				665917AF1F9CEEF800FB4013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		665917B01F9CEEF800FB4013 /* Build configuration list for PBXNativeTarget "iFixYouri Check InTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +748,7 @@
 				665917B21F9CEEF800FB4013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		665917B31F9CEEF800FB4013 /* Build configuration list for PBXNativeTarget "iFixYouri Check InUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +757,7 @@
 				665917B51F9CEEF800FB4013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  arch.swift
+//  constants.swift
 //  iFixYouri Check In
 //
 //  Created by Sam Elder on 10/22/17.
@@ -11,6 +11,6 @@ import Foundation
 struct api {
     
     //API URIs
-    static let placeCheckIn = "http://localhost:4200/api/checkin/create"
+    static let createCheckIn = "http://localhost:4200/api/checkin/create"
     
 }
