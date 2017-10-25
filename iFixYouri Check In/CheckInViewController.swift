@@ -11,7 +11,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class FirstViewController: UIViewController {
+class CheckInViewController: UIViewController {
 
     override func viewDidLoad() {
         
@@ -36,20 +36,25 @@ class FirstViewController: UIViewController {
         return .lightContent
     }
     
-    @IBAction func btnCreateCheckIn(_ sender: Any) {
-        
-        createOrder()
-        
-    }
     
     @IBOutlet weak var inputCustomerName: UITextField!
     
     @IBOutlet weak var inputCustomerPhoneNumber: UITextField!
-    
+     
     @IBOutlet weak var inputCustomerDevice: UITextField!
     
     @IBOutlet weak var inputDeviceIssue: UITextField!
     
+    
+    @IBOutlet weak var btnCreatePost: UIButton!
+
+    @IBAction func btnCreatePostAction(_ sender: Any) {
+        
+        createOrder()
+        
+        print("Pressed go button")
+        
+    }
     
     
     func initUi() {
@@ -69,6 +74,7 @@ class FirstViewController: UIViewController {
         //Call postOrder and pass object
         postOrder(_checkIn: checkIn)
         
+        print("Called order function")
     }
     
     func postOrder(_checkIn: CheckIn) {
