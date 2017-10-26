@@ -67,10 +67,7 @@ class DeviceStatusViewController: UIViewController {
     func fetchDeviceStatus(ticket_id: String) {
         
         
-        DispatchQueue.main.async() {
-            self.labelStatus.text = "Loading..."
 
-        }
 
         
         var url = api.getCheckIn + ticket_id
@@ -86,13 +83,29 @@ class DeviceStatusViewController: UIViewController {
                 
                 
                 
+//                
+//                print(json[0]["customer_name"])
+//                
+//                print(json[0]["updates"][0]["status"].stringValue)
+//                
                 
-                print(json["customer_name"])
                 
-                print(json["updates"][0]["status"].stringValue)
+                self.labelStatus.text = json[0]["updates"][0]["status"].stringValue
                 
                 
-                self.labelStatus.text = json["updates"][0]["status"].stringValue
+                print(json[0]["updates"][0]["status"])
+                print("Called updates on labelStatus")
+                
+                var status = json[0]["updates"][0]["status"].stringValue
+                
+
+                
+                DispatchQueue.main.async() {
+                    self.labelStatus.text = status
+                    print(self.labelStatus.text)
+                    
+                    
+                }
             }
             
             
