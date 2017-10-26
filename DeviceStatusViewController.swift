@@ -57,8 +57,10 @@ class DeviceStatusViewController: UIViewController {
         
         fetchDeviceStatus(ticket_id: inputTicketNumber.text!)
         
-        self.labelStatus.text = "Loading status..."
-
+        DispatchQueue.main.async() {
+            self.labelStatus.text = "Loading device status..."
+            
+        }
         
     }
     
