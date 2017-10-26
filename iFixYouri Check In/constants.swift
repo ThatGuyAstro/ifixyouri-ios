@@ -14,6 +14,8 @@ struct api {
     //API URIs
     static let createCheckIn = "http://localhost:4200/api/checkin/create"
     
+    static let getCheckIn = "http://localhost:4200/api/checkin/"
+    
 }
 
 struct ui {

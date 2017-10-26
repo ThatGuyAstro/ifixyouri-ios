@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		660787301F9E997C00BC68F8 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6607872F1F9E997C00BC68F8 /* helpers.swift */; };
 		6621EC101FA14F4D002BE8B9 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC0F1FA14F4D002BE8B9 /* OptionCell.swift */; };
+		6621EC161FA26B0C002BE8B9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC151FA26B0C002BE8B9 /* Device.swift */; };
+		6621EC181FA26B1B002BE8B9 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC171FA26B1B002BE8B9 /* Update.swift */; };
+		6621EC191FA28287002BE8B9 /* DeviceStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */; };
 		665917871F9CEEF700FB4013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665917861F9CEEF700FB4013 /* AppDelegate.swift */; };
 		665917891F9CEEF700FB4013 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665917881F9CEEF700FB4013 /* CheckInViewController.swift */; };
 		6659178B1F9CEEF700FB4013 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659178A1F9CEEF700FB4013 /* SecondViewController.swift */; };
@@ -51,6 +54,9 @@
 		3B9A3F24AE7E6077C43E107C /* Pods-iFixYouri Check InTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check InTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check InTests/Pods-iFixYouri Check InTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6607872F1F9E997C00BC68F8 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = helpers.swift; path = "iFixYouri Check In/helpers.swift"; sourceTree = "<group>"; };
 		6621EC0F1FA14F4D002BE8B9 /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceStatusViewController.swift; path = ../DeviceStatusViewController.swift; sourceTree = "<group>"; };
+		6621EC151FA26B0C002BE8B9 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		6621EC171FA26B1B002BE8B9 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		665917831F9CEEF700FB4013 /* iFixYouri Check In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iFixYouri Check In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665917861F9CEEF700FB4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665917881F9CEEF700FB4013 /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
@@ -158,8 +164,9 @@
 		665917851F9CEEF700FB4013 /* iFixYouri Check In */ = {
 			isa = PBXGroup;
 			children = (
-				665917861F9CEEF700FB4013 /* AppDelegate.swift */,
+				6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */,
 				665917881F9CEEF700FB4013 /* CheckInViewController.swift */,
+				665917861F9CEEF700FB4013 /* AppDelegate.swift */,
 				6659178A1F9CEEF700FB4013 /* SecondViewController.swift */,
 				6659178C1F9CEEF700FB4013 /* Main.storyboard */,
 				6659178F1F9CEEF800FB4013 /* Assets.xcassets */,
@@ -200,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				66AB00FE1F9D26B30063175E /* CheckIn.swift */,
+				6621EC151FA26B0C002BE8B9 /* Device.swift */,
+				6621EC171FA26B1B002BE8B9 /* Update.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -488,9 +497,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6621EC191FA28287002BE8B9 /* DeviceStatusViewController.swift in Sources */,
 				6659178B1F9CEEF700FB4013 /* SecondViewController.swift in Sources */,
 				66AB00FF1F9D26B30063175E /* CheckIn.swift in Sources */,
+				6621EC181FA26B1B002BE8B9 /* Update.swift in Sources */,
 				665917871F9CEEF700FB4013 /* AppDelegate.swift in Sources */,
+				6621EC161FA26B0C002BE8B9 /* Device.swift in Sources */,
 				665917891F9CEEF700FB4013 /* CheckInViewController.swift in Sources */,
 				66AB00FC1F9D22C30063175E /* constants.swift in Sources */,
 				6621EC101FA14F4D002BE8B9 /* OptionCell.swift in Sources */,

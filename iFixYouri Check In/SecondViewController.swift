@@ -115,7 +115,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             
             print("Selected - check repair status")
             
-            //performSegue(withIdentifier: "idCheckIn", sender: sender)
+            performSegue(withIdentifier: "idCheckStatus", sender: sender)
             
             
         }
