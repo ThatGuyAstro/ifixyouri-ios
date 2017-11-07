@@ -12,8 +12,13 @@ import Alamofire
 import SwiftyJSON
 
 
-class DeviceStatusViewController: UIViewController {
+class DeviceStatusViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
 
+    var updates = [Update]()
+    
+    @IBOutlet weak var tableViewUpdates: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,62 +62,106 @@ class DeviceStatusViewController: UIViewController {
         
         fetchDeviceStatus(ticket_id: inputTicketNumber.text!)
         
-        DispatchQueue.main.async() {
-            self.labelStatus.text = "Loading device status..."
-            
-        }
-        
     }
     
     func fetchDeviceStatus(ticket_id: String) {
         
-        
-
-
-        
-        var url = api.getCheckIn + ticket_id
+        let url = api.getCheckIn + ticket_id
         
         let request = Alamofire.request(url, method: HTTPMethod.get, encoding: JSONEncoding.default, headers: nil)
         request.responseJSON { response in
             
-//            print(response.result)
-//            print(response.value)
-            
             if let data = response.data {
                 let json = JSON(data: data)
                 
-                
-                
-//                
-//                print(json[0]["customer_name"])
-//                
-//                print(json[0]["updates"][0]["status"].stringValue)
-//                
-                
-                
-                self.labelStatus.text = json[0]["updates"][0]["status"].stringValue
-                
-                
-                print(json[0]["updates"][0]["status"])
                 print("Called updates on labelStatus")
                 
-                var status = json[0]["updates"][0]["status"].stringValue
-                
-
+                let status = json[0]["updates"][0]["status"].stringValue
                 
                 DispatchQueue.main.async() {
-                    self.labelStatus.text = status
-                    print(self.labelStatus.text)
                     
+                    self.labelStatus.text = status
                     
                 }
+                
+                
+                if(json[0]["updates"].count > 0) {
+                    
+                    for i in 0...(json[0]["updates"].count - 1) {
+                        
+                        print(json.count)
+                        
+//                        let owner_uid = json["items"][i]["item"]["owner_uid"].stringValue
+//
+//                        let product = ItemObject(id: convId!, owner_uid: Int(owner_uid)!, imagePath: imagePath, title: title, description: desc, price: convPrice!, discount_value: Double(discount_value)!)
+//
+//                        self.items.append(product)
+//
+//
+//                        print("Item infos")
+//                        print(self.items.count)
+//                        print(self.items)
+//
+//                        print("operation" + String(describing: result.value))
+//
+                        //self.tableView.reloadData()
+                        
+                    }
+                }
+                
             }
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "deviceUpdateCell", for: indexPath) as? DeviceUpdateCell {
             
+            let myCell = updates[indexPath.row]
+            
+            //cell.updateUI(_update: myCell)
+            
+            
+            return cell
+            
+        } else {
+            
+            return UITableViewCell()
             
         }
-
+        
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return updates.count
+        
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let sender = updates[indexPath.row]
+        
+        //self.tableActions.deselectSelectedRow(animated: true)
+        
         
     }
     
 
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
