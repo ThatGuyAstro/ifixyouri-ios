@@ -22,6 +22,9 @@ class DeviceStatusViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableViewUpdates.dataSource = self
+        self.tableViewUpdates.delegate = self
+        
         // Do any additional setup after loading the view.
         
         initUi()
@@ -76,7 +79,7 @@ class DeviceStatusViewController: UIViewController, UITableViewDataSource, UITab
                 
                 print("Called updates on labelStatus")
                 
-                let status = json[0]["updates"][0]["status"].stringValue
+                let status = json["updates"][0]["status"].stringValue
                 
                 DispatchQueue.main.async() {
                     
@@ -85,26 +88,21 @@ class DeviceStatusViewController: UIViewController, UITableViewDataSource, UITab
                 }
                 
                 
-                if(json[0]["updates"].count > 0) {
+                if(json["updates"].count > 0) {
                     
-                    for i in 0...(json[0]["updates"].count - 1) {
+                    for i in 0...(json["updates"].count - 1) {
                         
                         print(json.count)
                         
-//                        let owner_uid = json["items"][i]["item"]["owner_uid"].stringValue
-//
-//                        let product = ItemObject(id: convId!, owner_uid: Int(owner_uid)!, imagePath: imagePath, title: title, description: desc, price: convPrice!, discount_value: Double(discount_value)!)
-//
-//                        self.items.append(product)
-//
-//
-//                        print("Item infos")
-//                        print(self.items.count)
-//                        print(self.items)
-//
-//                        print("operation" + String(describing: result.value))
-//
-                        //self.tableView.reloadData()
+                        let _status = json["updates"][i]["status"].stringValue
+                        let _content = json["updates"][i]["content"].stringValue
+                        let _check_in_id = Int(json["check_in"]["id"].stringValue)!
+
+                        let _update = Update(content: _content, status: _status, check_in_id: _check_in_id)
+                        
+                        self.updates.append(_update)
+                        
+                        self.tableViewUpdates.reloadData()
                         
                     }
                 }
@@ -120,6 +118,9 @@ class DeviceStatusViewController: UIViewController, UITableViewDataSource, UITab
             let myCell = updates[indexPath.row]
             
             //cell.updateUI(_update: myCell)
+            
+            cell.updateUI(update: updates[indexPath.row])
+
             
             
             return cell
