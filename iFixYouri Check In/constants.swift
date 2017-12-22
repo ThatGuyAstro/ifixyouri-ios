@@ -18,6 +18,8 @@ struct api {
     
     static let locations = "http://67.205.189.106/api/locations"
     
+    static let location = "http://67.205.189.106/api/locations/"
+    
 }
 
 struct ui {

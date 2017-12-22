@@ -10,6 +10,9 @@ import UIKit
 
 import GoogleMaps
 
+import Alamofire
+import SwiftyJSON
+
 class StoreViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
@@ -20,6 +23,27 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var btnCheckIn: UIButton!
     
     @IBOutlet weak var scrollViewContainer: UIScrollView!
+    
+    @IBOutlet weak var labelStoreName: UILabel!
+    @IBOutlet weak var labelOpenUntil: UILabel!
+    @IBOutlet weak var labelEstimatedWait: UILabel!
+    
+    private var _storeId: Int!
+    
+    var storeId: Int {
+        get {
+            return _storeId
+        } set {
+            _storeId = newValue
+        }
+    }
+    
+    var lat = 0.0
+    var lng = 0.0
+    var friendlyName = ""
+    var address = ""
+    var id = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,17 +66,50 @@ class StoreViewController: UIViewController {
     
     func loadUi() {
         
+        let url = api.location + String(storeId)
+        
+        let request = Alamofire.request(url, method: HTTPMethod.get, encoding: JSONEncoding.default, headers: nil)
+        request.responseJSON { response in
+            
+            if let data = response.data {
+                
+                
+                let json = JSON(data: data)
+
+                    
+                self.lat = json["lat"].doubleValue
+                self.lng = json["lng"].doubleValue
+                self.friendlyName = json["friendly_name"].stringValue
+                self.address = json["address"].stringValue
+                self.id = json["id"].intValue
+                                    
+                let marker = GMSMarker()
+                    
+                marker.position = CLLocationCoordinate2D(latitude: self.lat, longitude: self.lng)
+                marker.title = self.title
+                marker.snippet = self.address
+                marker.map = self.mapView
+                
+                let storeLocation = CLLocationCoordinate2D(latitude: self.lat, longitude: self.lng)
+                let storeCamera = GMSCameraUpdate.setTarget(storeLocation, zoom: 14.0)
+                self.mapView.animate(with: storeCamera)
+                
+                self.labelStoreName.text = "iFixYouri \(self.friendlyName)"
+
+                
+            }
+        }
+        
+        print(self.friendlyName)
+        
+        
+        self.mapView.layer.cornerRadius = 5;
+        self.mapView.layer.masksToBounds = true;
+        
         self.scrollViewContainer.contentSize.height = 1500
+    
         
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 26.935416, longitude: -80.092185)
-        marker.title = "iFixYouri"
-        marker.snippet = "75 E Indiantown Rd Suite 604, Jupiter, FL 33477"
-        marker.map = self.mapView
-        
-        let storeLocation = CLLocationCoordinate2D(latitude: 26.935416, longitude: -80.092185)
-        let storeCamera = GMSCameraUpdate.setTarget(storeLocation, zoom: 14.0)
-        mapView.animate(with: storeCamera)
+
         
         self.btnCall.layer.cornerRadius = 7.5
         self.btnCall.layer.borderColor = ui.mainClor.cgColor
