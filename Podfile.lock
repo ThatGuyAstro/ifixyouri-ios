@@ -1,21 +1,34 @@
 PODS:
   - Alamofire (4.5.1)
   - EZSwiftExtensions (1.11)
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
+    - GoogleMaps/Base
+  - p2.OAuth2 (3.0.3)
   - PMSuperButton (2.0.4)
+  - PullToRefreshKit (0.6.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - EZSwiftExtensions
+  - GoogleMaps
+  - p2.OAuth2 (~> 3.0)
   - PMSuperButton
-  - SwiftyJSON
+  - PullToRefreshKit (~> 0.6.0)
+  - SwiftyJSON (= 3.1.4)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   EZSwiftExtensions: 84000042202d9fd574f626cda3064143f27fa767
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  p2.OAuth2: 63d8d3e366ac2c43bfe8bfa13b42cfeb908c314e
   PMSuperButton: 148f52039b68d13b9335a3e8af81f37aec55cfa8
+  PullToRefreshKit: 49f63861030a78eeab18d3fb8d338da845e6bc57
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 69051964e9d11d13c369c3f779ea7bfd09b8b135
+PODFILE CHECKSUM: a54eca36814f365b642b9f220d74aa28e8f82faa
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.2.0

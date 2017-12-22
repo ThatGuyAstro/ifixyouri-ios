@@ -14,7 +14,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableActions: UITableView!
     
     //What actions the user can use
-    var actions = ["Check repair status", "Check in a device", "Stores near me"]
+    var actions = ["Check repair status", "Check in a device", "Stores near me", "Store"]
 
     
 
@@ -50,6 +50,24 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         if segue.identifier == "idCheckIn" {
             
             if let destination = segue.destination as? CheckInViewController {
+                
+                //destination.selectedItem = Products[tableView.indexPathForSelectedRow!.row]
+                
+            }
+        }
+        
+        if segue.identifier == "segueLocations" {
+            
+            if let destination = segue.destination as? LocationsViewController {
+                
+                //destination.selectedItem = Products[tableView.indexPathForSelectedRow!.row]
+                
+            }
+        }
+        
+        if segue.identifier == "segueStore" {
+            
+            if let destination = segue.destination as? StoreViewController {
                 
                 //destination.selectedItem = Products[tableView.indexPathForSelectedRow!.row]
                 
@@ -124,10 +142,21 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             
             print("Selected - stores near me")
             
-            //performSegue(withIdentifier: "idCheckIn", sender: sender)
+            performSegue(withIdentifier: "segueLocations", sender: sender)
             
             
         }
+        
+        if(sender == "Store") {
+            
+            print("Selected - stores near me")
+            
+            performSegue(withIdentifier: "segueStore", sender: sender)
+            
+            
+        }
+        
+
         
         //self.tableActions.deselectSelectedRow(animated: true)
         

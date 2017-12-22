@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		660514C61FAA4057005D7C18 /* DeviceStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */; };
 		660787301F9E997C00BC68F8 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6607872F1F9E997C00BC68F8 /* helpers.swift */; };
+		661C89441FEC37F100657D13 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661C89431FEC37F100657D13 /* LocationsViewController.swift */; };
+		661C89461FEC483700657D13 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661C89451FEC483700657D13 /* StoreViewController.swift */; };
+		661C89541FEC4F3300657D13 /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C89481FEC4F3300657D13 /* SourceSansPro-Black.ttf */; };
+		661C89551FEC4F3300657D13 /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C89491FEC4F3300657D13 /* SourceSansPro-BlackItalic.ttf */; };
+		661C89561FEC4F3300657D13 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C894A1FEC4F3300657D13 /* SourceSansPro-Bold.ttf */; };
+		661C89571FEC4F3300657D13 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C894B1FEC4F3300657D13 /* SourceSansPro-BoldItalic.ttf */; };
+		661C89581FEC4F3300657D13 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C894C1FEC4F3300657D13 /* SourceSansPro-ExtraLight.ttf */; };
+		661C89591FEC4F3300657D13 /* SourceSansPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C894D1FEC4F3300657D13 /* SourceSansPro-ExtraLightItalic.ttf */; };
+		661C895A1FEC4F3300657D13 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C894E1FEC4F3300657D13 /* SourceSansPro-Italic.ttf */; };
+		661C895B1FEC4F3300657D13 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C894F1FEC4F3300657D13 /* SourceSansPro-Light.ttf */; };
+		661C895C1FEC4F3300657D13 /* SourceSansPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C89501FEC4F3300657D13 /* SourceSansPro-LightItalic.ttf */; };
+		661C895D1FEC4F3300657D13 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C89511FEC4F3300657D13 /* SourceSansPro-Regular.ttf */; };
+		661C895E1FEC4F3300657D13 /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C89521FEC4F3300657D13 /* SourceSansPro-Semibold.ttf */; };
+		661C895F1FEC4F3300657D13 /* SourceSansPro-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 661C89531FEC4F3300657D13 /* SourceSansPro-SemiboldItalic.ttf */; };
 		6621EC101FA14F4D002BE8B9 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC0F1FA14F4D002BE8B9 /* OptionCell.swift */; };
 		6621EC161FA26B0C002BE8B9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC151FA26B0C002BE8B9 /* Device.swift */; };
 		6621EC181FA26B1B002BE8B9 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EC171FA26B1B002BE8B9 /* Update.swift */; };
@@ -54,14 +68,28 @@
 		3914253150AF0B5E585D447A /* Pods_iFixYouri_Check_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFixYouri_Check_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9A3F24AE7E6077C43E107C /* Pods-iFixYouri Check InTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFixYouri Check InTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFixYouri Check InTests/Pods-iFixYouri Check InTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6607872F1F9E997C00BC68F8 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = helpers.swift; path = "iFixYouri Check In/helpers.swift"; sourceTree = "<group>"; };
+		661C89431FEC37F100657D13 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		661C89451FEC483700657D13 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		661C89481FEC4F3300657D13 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Black.ttf"; path = "fonts/SourceSansPro/SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
+		661C89491FEC4F3300657D13 /* SourceSansPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-BlackItalic.ttf"; path = "fonts/SourceSansPro/SourceSansPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		661C894A1FEC4F3300657D13 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Bold.ttf"; path = "fonts/SourceSansPro/SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		661C894B1FEC4F3300657D13 /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-BoldItalic.ttf"; path = "fonts/SourceSansPro/SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		661C894C1FEC4F3300657D13 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLight.ttf"; path = "fonts/SourceSansPro/SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		661C894D1FEC4F3300657D13 /* SourceSansPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLightItalic.ttf"; path = "fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		661C894E1FEC4F3300657D13 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Italic.ttf"; path = "fonts/SourceSansPro/SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
+		661C894F1FEC4F3300657D13 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Light.ttf"; path = "fonts/SourceSansPro/SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		661C89501FEC4F3300657D13 /* SourceSansPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-LightItalic.ttf"; path = "fonts/SourceSansPro/SourceSansPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		661C89511FEC4F3300657D13 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Regular.ttf"; path = "fonts/SourceSansPro/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		661C89521FEC4F3300657D13 /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Semibold.ttf"; path = "fonts/SourceSansPro/SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; };
+		661C89531FEC4F3300657D13 /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-SemiboldItalic.ttf"; path = "fonts/SourceSansPro/SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		6621EC0F1FA14F4D002BE8B9 /* OptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
-		6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceStatusViewController.swift; path = ../DeviceStatusViewController.swift; sourceTree = "<group>"; };
+		6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceStatusViewController.swift; sourceTree = "<group>"; };
 		6621EC151FA26B0C002BE8B9 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		6621EC171FA26B1B002BE8B9 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		665917831F9CEEF700FB4013 /* iFixYouri Check In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iFixYouri Check In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665917861F9CEEF700FB4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		665917881F9CEEF700FB4013 /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
-		6659178A1F9CEEF700FB4013 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		665917881F9CEEF700FB4013 /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CheckInViewController.swift; path = "iFixYouri Check In/CheckInViewController.swift"; sourceTree = "<group>"; };
+		6659178A1F9CEEF700FB4013 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "iFixYouri Check In/SecondViewController.swift"; sourceTree = "<group>"; };
 		6659178D1F9CEEF700FB4013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6659178F1F9CEEF800FB4013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		665917921F9CEEF800FB4013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,6 +158,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		661C89421FEC37D100657D13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				661C89431FEC37F100657D13 /* LocationsViewController.swift */,
+				661C89451FEC483700657D13 /* StoreViewController.swift */,
+				6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */,
+				665917881F9CEEF700FB4013 /* CheckInViewController.swift */,
+				6659178A1F9CEEF700FB4013 /* SecondViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		661C89471FEC4F2600657D13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				661C89481FEC4F3300657D13 /* SourceSansPro-Black.ttf */,
+				661C89491FEC4F3300657D13 /* SourceSansPro-BlackItalic.ttf */,
+				661C894A1FEC4F3300657D13 /* SourceSansPro-Bold.ttf */,
+				661C894B1FEC4F3300657D13 /* SourceSansPro-BoldItalic.ttf */,
+				661C894C1FEC4F3300657D13 /* SourceSansPro-ExtraLight.ttf */,
+				661C894D1FEC4F3300657D13 /* SourceSansPro-ExtraLightItalic.ttf */,
+				661C894E1FEC4F3300657D13 /* SourceSansPro-Italic.ttf */,
+				661C894F1FEC4F3300657D13 /* SourceSansPro-Light.ttf */,
+				661C89501FEC4F3300657D13 /* SourceSansPro-LightItalic.ttf */,
+				661C89511FEC4F3300657D13 /* SourceSansPro-Regular.ttf */,
+				661C89521FEC4F3300657D13 /* SourceSansPro-Semibold.ttf */,
+				661C89531FEC4F3300657D13 /* SourceSansPro-SemiboldItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		6621EC0E1FA14F26002BE8B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +201,8 @@
 		6659177A1F9CEEF700FB4013 = {
 			isa = PBXGroup;
 			children = (
+				661C89471FEC4F2600657D13 /* Resources */,
+				661C89421FEC37D100657D13 /* Controller */,
 				6621EC0E1FA14F26002BE8B9 /* View */,
 				66AB01001F9D26BA0063175E /* Model */,
 				66AB00FD1F9D26170063175E /* Architecture */,
@@ -167,10 +228,7 @@
 		665917851F9CEEF700FB4013 /* iFixYouri Check In */ = {
 			isa = PBXGroup;
 			children = (
-				6621EC131FA268BF002BE8B9 /* DeviceStatusViewController.swift */,
-				665917881F9CEEF700FB4013 /* CheckInViewController.swift */,
 				665917861F9CEEF700FB4013 /* AppDelegate.swift */,
-				6659178A1F9CEEF700FB4013 /* SecondViewController.swift */,
 				6659178C1F9CEEF700FB4013 /* Main.storyboard */,
 				6659178F1F9CEEF800FB4013 /* Assets.xcassets */,
 				665917911F9CEEF800FB4013 /* LaunchScreen.storyboard */,
@@ -335,9 +393,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661C89581FEC4F3300657D13 /* SourceSansPro-ExtraLight.ttf in Resources */,
+				661C89571FEC4F3300657D13 /* SourceSansPro-BoldItalic.ttf in Resources */,
+				661C895B1FEC4F3300657D13 /* SourceSansPro-Light.ttf in Resources */,
+				661C89541FEC4F3300657D13 /* SourceSansPro-Black.ttf in Resources */,
 				665917931F9CEEF800FB4013 /* LaunchScreen.storyboard in Resources */,
+				661C895A1FEC4F3300657D13 /* SourceSansPro-Italic.ttf in Resources */,
+				661C895F1FEC4F3300657D13 /* SourceSansPro-SemiboldItalic.ttf in Resources */,
+				661C89551FEC4F3300657D13 /* SourceSansPro-BlackItalic.ttf in Resources */,
 				665917901F9CEEF800FB4013 /* Assets.xcassets in Resources */,
+				661C895D1FEC4F3300657D13 /* SourceSansPro-Regular.ttf in Resources */,
+				661C895E1FEC4F3300657D13 /* SourceSansPro-Semibold.ttf in Resources */,
 				6659178E1F9CEEF700FB4013 /* Main.storyboard in Resources */,
+				661C89561FEC4F3300657D13 /* SourceSansPro-Bold.ttf in Resources */,
+				661C89591FEC4F3300657D13 /* SourceSansPro-ExtraLightItalic.ttf in Resources */,
+				661C895C1FEC4F3300657D13 /* SourceSansPro-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +440,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3A2C6100565F43CA0FABFC5A /* [CP] Copy Pods Resources */ = {
@@ -415,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8B002507AA592498E6E2C434 /* [CP] Check Pods Manifest.lock */ = {
@@ -430,7 +500,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8E7859831A819409EC053264 /* [CP] Copy Pods Resources */ = {
@@ -506,11 +576,13 @@
 				66AB00FF1F9D26B30063175E /* CheckIn.swift in Sources */,
 				6621EC181FA26B1B002BE8B9 /* Update.swift in Sources */,
 				665917871F9CEEF700FB4013 /* AppDelegate.swift in Sources */,
+				661C89461FEC483700657D13 /* StoreViewController.swift in Sources */,
 				6621EC161FA26B0C002BE8B9 /* Device.swift in Sources */,
 				665917891F9CEEF700FB4013 /* CheckInViewController.swift in Sources */,
 				66AB00FC1F9D22C30063175E /* constants.swift in Sources */,
 				6621EC101FA14F4D002BE8B9 /* OptionCell.swift in Sources */,
 				660787301F9E997C00BC68F8 /* helpers.swift in Sources */,
+				661C89441FEC37F100657D13 /* LocationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

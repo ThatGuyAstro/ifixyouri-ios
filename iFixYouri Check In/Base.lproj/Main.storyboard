@@ -7,6 +7,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--iFixYouri Check In-->
         <scene sceneID="hNz-n2-bh7">
@@ -184,7 +189,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KqN-ge-AZy" id="lDQ-oo-VQB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU2-4M-aCF">
@@ -224,6 +229,116 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxh-p2-LQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2517.5999999999999" y="722.78860569715152"/>
+        </scene>
+        <!--Locations View Controller-->
+        <scene sceneID="flg-3D-pNr">
+            <objects>
+                <viewController id="VTP-ui-nmS" customClass="LocationsViewController" customModule="iFixYouri_Check_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SnS-WT-LBN"/>
+                        <viewControllerLayoutGuide type="bottom" id="uFd-hq-37A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LOd-mb-COx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6t-oc-EwZ" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="V6t-oc-EwZ" id="AkH-RZ-TPy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eih-gF-pZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3237.5999999999999" y="73.313343328335833"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="EKY-9D-7bd">
+            <objects>
+                <viewController title="Store" id="g8J-yk-N5a" customClass="StoreViewController" customModule="iFixYouri_Check_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QXH-Za-hO3"/>
+                        <viewControllerLayoutGuide type="bottom" id="jl3-oZ-BSe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CLl-Le-d67">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-dO-DMN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iFixYouri Indiantown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIM-zR-RWR">
+                                        <rect key="frame" x="16" y="16" width="185" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open until 8 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbZ-RR-vki">
+                                        <rect key="frame" x="16" y="41" width="123" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.6819696784" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF8-70-1vd">
+                                        <rect key="frame" x="16" y="70" width="106" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Call"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCo-W8-RRU">
+                                        <rect key="frame" x="134" y="70" width="106" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Directions"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDC-h9-TVs" customClass="GMSMapView">
+                                        <rect key="frame" x="0.0" y="111" width="375" height="147"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPX-IW-R3V">
+                                        <rect key="frame" x="253" y="70" width="106" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Review"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2Z-Ve-kTF">
+                                        <rect key="frame" x="16" y="266" width="343" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Check In"/>
+                                        <connections>
+                                            <action selector="didTapCheckIn:" destination="g8J-yk-N5a" eventType="touchUpInside" id="AP7-59-zmy"/>
+                                            <segue destination="9pv-A4-QxB" kind="show" identifier="segueCheckIn" id="GoF-6N-f8p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="b8m-dO-DMN" secondAttribute="bottom" id="3JS-oX-AYc"/>
+                            <constraint firstAttribute="trailing" secondItem="b8m-dO-DMN" secondAttribute="trailing" id="WAa-it-fgG"/>
+                            <constraint firstItem="b8m-dO-DMN" firstAttribute="leading" secondItem="CLl-Le-d67" secondAttribute="leading" id="rwu-hf-fXk"/>
+                            <constraint firstItem="b8m-dO-DMN" firstAttribute="top" secondItem="CLl-Le-d67" secondAttribute="top" id="tEt-nl-mws"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCall" destination="xF8-70-1vd" id="fYn-VG-sA8"/>
+                        <outlet property="btnCheckIn" destination="J2Z-Ve-kTF" id="Nv4-mY-MlX"/>
+                        <outlet property="btnDirections" destination="PCo-W8-RRU" id="QL0-xJ-02f"/>
+                        <outlet property="btnReview" destination="OPX-IW-R3V" id="5F7-d9-WxH"/>
+                        <outlet property="mapView" destination="FDC-h9-TVs" id="57G-Zx-wYo"/>
+                        <outlet property="scrollViewContainer" destination="b8m-dO-DMN" id="Gsn-Df-Mq5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PxL-CY-tdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688.8" y="-298.2008995502249"/>
         </scene>
         <!--iFixYouri-->
         <scene sceneID="wg7-f3-ORb">
@@ -272,6 +387,8 @@
                         <outlet property="tableActions" destination="6lM-TB-khD" id="WFk-Cf-die"/>
                         <segue destination="9pv-A4-QxB" kind="show" identifier="idCheckIn" id="jCw-8Z-oc4"/>
                         <segue destination="UpQ-4D-DSu" kind="show" identifier="idCheckStatus" id="Jka-Ds-CmT"/>
+                        <segue destination="VTP-ui-nmS" kind="show" identifier="segueLocations" id="b6y-Sy-V84"/>
+                        <segue destination="g8J-yk-N5a" kind="show" identifier="segueStore" id="caJ-xR-Oj1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -284,7 +401,7 @@
                 <navigationController title="Second" automaticallyAdjustsScrollViewInsets="NO" id="cvL-IO-zSL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ias-jK-yZa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ias-jK-yZa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -301,4 +418,7 @@
     <resources>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GoF-6N-f8p"/>
+    </inferredMetricsTieBreakers>
 </document>

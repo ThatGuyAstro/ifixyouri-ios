@@ -34,7 +34,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PullToRefreshKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>p2.OAuth2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,6 +52,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>29EEEC9E0608911AEE79862A99EEA2B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>33EEC55687CEAFE42C3B925604032D03</key>
 		<dict>
 			<key>primary</key>
@@ -57,6 +72,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>618A91D5E0E1EC323C9351A12E51BCC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7FACD260E087D4EF699CAF86056CC76D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
@@ -67,12 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DDDB84B270104092A2E9F6627FBD7948</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F6DF3327F5C2D6347D036D1A8AEBEED8</key>
+		<key>DD7CBC6A2DFD2FD7DBFFAE498DABAE66</key>
 		<dict>
 			<key>primary</key>
 			<true/>
