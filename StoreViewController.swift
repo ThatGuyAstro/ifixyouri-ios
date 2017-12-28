@@ -28,6 +28,8 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var labelOpenUntil: UILabel!
     @IBOutlet weak var labelEstimatedWait: UILabel!
     
+    @IBOutlet weak var btnBuyDevice: UIButton!
+    
     private var _storeId: Int!
     
     var storeId: Int {
@@ -109,7 +111,11 @@ class StoreViewController: UIViewController {
         self.scrollViewContainer.contentSize.height = 1500
     
         
-
+        self.btnBuyDevice.layer.cornerRadius = 7.5
+        self.btnBuyDevice.layer.borderColor = ui.mainClor.cgColor
+        self.btnBuyDevice.setTitleColor(ui.mainClor, for: .normal)
+        self.btnBuyDevice.layer.borderWidth = 1
+        
         
         self.btnCall.layer.cornerRadius = 7.5
         self.btnCall.layer.borderColor = ui.mainClor.cgColor

@@ -11,8 +11,18 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class CheckInViewController: UIViewController {
+class CheckInViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    @available(iOS 2.0, *)
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
 
+
+    //Make dynamic via web server
+    var pickerData = ["iPhone", "iPad", "Computer", "Other"]
+    
+    @IBOutlet weak var pickerDevices: UIPickerView!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -57,6 +67,16 @@ class CheckInViewController: UIViewController {
     }
     
     
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    
     func initUi() {
         
         self.navigationController?.navigationBar.backgroundColor = ui.mainClor
@@ -64,6 +84,11 @@ class CheckInViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
+        
+        pickerDevices.delegate = self
+        self.pickerDevices.dataSource = self
+        
+        print("Current device model: \(UIDevice.current.model)")
     }
     
     func createOrder() {

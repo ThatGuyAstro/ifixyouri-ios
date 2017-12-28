@@ -12,13 +12,13 @@ import UIKit
 struct api {
     
     //API URIs
-    static let createCheckIn = "http://67.205.189.106/api/checkin/create"
+    static let createCheckIn = "http://165.227.201.67/api/checkin/create"
     
-    static let getCheckIn = "http://67.205.189.106/api/checkin/"
+    static let getCheckIn = "http://165.227.201.67/api/checkin/"
     
-    static let locations = "http://67.205.189.106/api/locations"
+    static let locations = "http://165.227.201.67/api/locations"
     
-    static let location = "http://67.205.189.106/api/locations/"
+    static let location = "http://165.227.201.67/api/locations/"
     
 }
 

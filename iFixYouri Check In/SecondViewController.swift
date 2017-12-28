@@ -14,7 +14,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableActions: UITableView!
     
     //What actions the user can use
-    var actions = ["Check repair status", "Check in a device", "Stores near me", "Store"]
+    var actions = ["Check repair status", "Check in a device", "Stores near me", /** "Store" **/ ]
 
     
 
